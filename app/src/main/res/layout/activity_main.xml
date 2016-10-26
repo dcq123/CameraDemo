@@ -24,24 +24,36 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_margin="32dp"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/btn_switch_camera"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_weight="1"
+            android:background="@drawable/btn_bg_selector"
             android:gravity="center"
             android:onClick="switchCamera"
-            android:text="切换摄像头" />
+            android:text="切换摄像头"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="32dp"
+            android:layout_height="match_parent" />
+
 
         <Button
             android:id="@+id/btn_capture"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_weight="1"
+            android:background="@drawable/btn_bg_selector"
             android:gravity="center"
             android:onClick="capture"
-            android:text="拍照" />
+            android:text="拍照"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
     </LinearLayout>
 </RelativeLayout>
